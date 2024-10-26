@@ -17,7 +17,7 @@ ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))
 
 ThisBuild / crossScalaVersions := Seq("2.13.15", "3.3.4")
 
-lazy val root = tlCrossRootProject.aggregate(catscript)
+lazy val root = tlCrossRootProject.aggregate(catscript, examples)
 
 lazy val catscript = crossProject(JVMPlatform, JSPlatform, NativePlatform)
   .crossType(CrossType.Pure)
@@ -40,6 +40,15 @@ lazy val catscript = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       "com.disneystreaming" %% "weaver-scalacheck" % "0.8.4" % Test
     ),
     mimaPreviousArtifacts := Set()
+  )
+
+lazy val examples = project
+  .in(file("examples"))
+  .enablePlugins(NoPublishPlugin)
+  .dependsOn(catscript.jvm)
+  .settings(
+    name                 := "catscript-examples",
+    Compile / run / fork := true
   )
 
 lazy val docs = project
