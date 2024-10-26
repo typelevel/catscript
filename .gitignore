@@ -23,3 +23,8 @@ metals.sbt
 
 # npm
 node_modules/
+
+# project related
+.js
+.jvm
+.native
