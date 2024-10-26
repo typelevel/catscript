@@ -16,6 +16,4 @@
 
 package org.typelevel.catscript
 
-object Catscript {
-  val test = "Catscript"
-}
+
