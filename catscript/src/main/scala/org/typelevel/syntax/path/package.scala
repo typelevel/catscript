@@ -610,6 +610,8 @@ package object path {
    *   the suffix string to be used in generating the file's name
    * @param permissions
    *   permissions to set on the created file
+   * @param use
+   *   function describing the computation to be done with the temporary file
    * @return
    *   The result of the computation after using the temporary file
    */
@@ -640,6 +642,9 @@ package object path {
    *   the prefix string to be used in generating the directory's name
    * @param permissions
    *   permissions to set on the created file
+   * @param use
+   *   function describing the computation to be done with the temporary
+   *   directory
    * @return
    *   the result of the computation after using the temporary directory
    */
