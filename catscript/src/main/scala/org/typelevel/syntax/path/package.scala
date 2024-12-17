@@ -29,7 +29,6 @@ import java.nio.charset.Charset
 
 package object path {
 
-  private val files = Files[IO]
 
   implicit class FileOps(private val path: Path) extends AnyVal {
 
