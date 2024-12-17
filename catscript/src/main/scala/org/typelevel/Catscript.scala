@@ -737,6 +737,7 @@ object Catscript {
    * @return
    *   the result of the computation after using the temporary directory
    */
+  
   def withTempDirectory[A](
       dir: Option[Path],
       prefix: String,
