@@ -655,6 +655,6 @@ package object path {
     Catscript.withTempDirectory(dir, prefix, permissions)(use)
 
   /** User's home directory */
-  def userHome: IO[Path] = files.userHome
+  def userHome: IO[Path] = Files[IO].userHome
 
 }
