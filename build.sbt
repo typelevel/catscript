@@ -27,7 +27,7 @@ lazy val catscript = crossProject(JVMPlatform, JSPlatform, NativePlatform)
     libraryDependencies ++= List(
       "org.typelevel" %% "cats-core"      % "2.12.0",
       "org.typelevel" %% "alleycats-core" % "2.12.0",
-      "org.typelevel" %% "cats-effect"    % "3.5.4",
+      "org.typelevel" %% "cats-effect"    % "3.5.7",
       "co.fs2"        %% "fs2-core"       % "3.10.2",
       "co.fs2"        %% "fs2-io"         % "3.10.2",
       "co.fs2"        %% "fs2-scodec"     % "3.10.2",
