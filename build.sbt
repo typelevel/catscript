@@ -15,7 +15,7 @@ ThisBuild / developers := List(
 ThisBuild / tlSitePublishBranch        := Some("main")
 ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))
 
-ThisBuild / crossScalaVersions := Seq("2.13.15", "3.3.4")
+ThisBuild / crossScalaVersions := Seq("2.13.16", "3.3.4")
 
 lazy val root = tlCrossRootProject.aggregate(catscript, examples)
 
