@@ -29,7 +29,7 @@ object App extends IOApp {
 
   private val getOrCreateBookPath: IO[Path] = for {
     home <- userHome
-    dir  = home / ".shellfish"
+    dir  = home / ".catscript"
     path = dir / "contacts.data"
     exists <- path.exists
     _      <- dir.createDirectories.unlessA(exists)
