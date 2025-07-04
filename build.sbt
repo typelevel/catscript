@@ -36,8 +36,8 @@ lazy val catscript = crossProject(JVMPlatform, JSPlatform, NativePlatform)
                                          "1.11.10"
                                        else "2.3.0"),
       // Testing
-      "com.disneystreaming" %% "weaver-cats"       % "0.8.4" % Test,
-      "com.disneystreaming" %% "weaver-scalacheck" % "0.8.4" % Test
+      "org.typelevel" %% "weaver-cats"       % "0.9.2" % Test,
+      "org.typelevel" %% "weaver-scalacheck" % "0.9.2" % Test
     ),
     mimaPreviousArtifacts := Set()
   )
