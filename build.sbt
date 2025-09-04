@@ -28,9 +28,9 @@ lazy val catscript = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       "org.typelevel" %% "cats-core"      % "2.12.0",
       "org.typelevel" %% "alleycats-core" % "2.12.0",
       "org.typelevel" %% "cats-effect"    % "3.5.4",
-      "co.fs2"        %% "fs2-core"       % "3.10.2",
-      "co.fs2"        %% "fs2-io"         % "3.10.2",
-      "co.fs2"        %% "fs2-scodec"     % "3.10.2",
+      "co.fs2"        %% "fs2-core"       % "3.12.2",
+      "co.fs2"        %% "fs2-io"         % "3.12.2",
+      "co.fs2"        %% "fs2-scodec"     % "3.12.2",
       "org.scodec"    %% "scodec-bits"    % "1.2.0",
       "org.scodec" %% "scodec-core" % (if (scalaVersion.value.startsWith("2."))
                                          "1.11.10"
